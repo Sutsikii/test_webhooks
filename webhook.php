@@ -1,2 +1,2 @@
 <?php
-    echo shell_exec('sh /home/sutsiki/Scripts/serverpage.sh');
+    echo shell_exec('sh /home/sutsiki/Scripts/deploy.sh');
