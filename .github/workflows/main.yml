@@ -1,9 +1,13 @@
+name: Base Pipeline
+
 on: push
 jobs:
-  curl:
-    runs-on: debian-latest
+  push:
+
+    runs-on: ubuntu-latest
+
     steps:
-    - name: curl
-      uses: wei/curl@master
-      with:
-        args: https://sutcorp-industry.com/webhook.php
+      - name: Call WebHook Web
+          uses: wei/curl@v1
+          with:
+            args: https://sutcorp-industry.com/webhook.php
